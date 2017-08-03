@@ -8,7 +8,7 @@ module.exports = (React, ReactNative, { constants, model, styles }) => {
     TouchableWithoutFeedback,
     ScrollView,
     View,
-    BackAndroid
+    BackHandler
   } = ReactNative;
   const AnimatedOptionsContainer = require('./makeAnimatedOptionsContainer')(React, ReactNative);
 
