@@ -149,8 +149,8 @@ module.exports = (React, ReactNative, { constants, model, styles }) => {
       }
 
       if (this.props.detectBackAndroid){
-        BackAndroid.removeEventListener('hardwareBackPress', this.handleBackAndroid);  //Override previous listener
-        BackAndroid.addEventListener('hardwareBackPress', this.handleBackAndroid);
+        BackHandler.removeEventListener('hardwareBackPress', this.handleBackAndroid);  //Override previous listener
+        BackHandler.addEventListener('hardwareBackPress', this.handleBackAndroid);
       }
       this._menus[name] = hooks;
     },
